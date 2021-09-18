@@ -82,7 +82,6 @@ describe("Create Statement", () => {
     
             await createStatementUseCase.execute({ amount: 150, description: "withdraw", type: "withdraw" as OperationType, user_id: user.id as string })
 
-
         }).rejects.toBeInstanceOf(CreateStatementError.InsufficientFunds)
 
     })
