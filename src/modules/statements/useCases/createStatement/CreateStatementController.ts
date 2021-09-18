@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { container } from 'tsyringe';
 
+
 import { CreateStatementUseCase } from './CreateStatementUseCase';
 
 enum OperationType {
